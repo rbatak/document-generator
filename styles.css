@@ -96,4 +96,26 @@ button:hover {
 }
 
 #formContent {
-    padding:​⬤
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    min-height: 200px;
+    background-color: #fff;
+}
+
+/* Improved Layout and Responsiveness */
+@media (max-width: 600px) {
+    main {
+        padding: 1rem;
+    }
+
+    .document-selection, .form-display {
+        width: 100%;
+        padding: 1rem;
+    }
+
+    button {
+        font-size: 0.9rem;
+        padding: 0.6rem;
+    }
+}
