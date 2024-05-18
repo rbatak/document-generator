@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document Generation</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Document Generation Website</h1>
+    </header>
+    <main>
+        <section class="document-selection">
+            <h2>Select Document Type</h2>
+            <form id="documentForm">
+                <label for="documentDropdown">Choose a document type:</label>
+                <select id="documentDropdown" onchange="displayForm()">
+                    <option value="">Select...</option>
+                    <option value="resume">Resume</option>
+                    <option value="coverLetter">Cover Letter</option>
+                    <option value="invoice">Invoice</option>
+                </select>
+            </form>
+        </section>
+        <section class="form-display">
+            <h2>Fill the Form</h2>
+            <div id="formContent">
+                <!-- Form content will be displayed here -->
+            </div>
+        </section>
+    </main>
+    <script src="scripts.js"></script>
+</body>
+</html>
