@@ -1,6 +1,6 @@
 /* General Styles */
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f5f5f5;
@@ -8,8 +8,8 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100vh;
-    background: linear-gradient(to right, #4CAF50, #2e7d32);
+    min-height: 100vh;
+    background: linear-gradient(to right, #2a5298, #1e3c72);
     color: #333;
 }
 
@@ -35,13 +35,14 @@ h1, h2 {
     margin: 0;
     padding: 0.5rem 0;
     color: white;
+    font-weight: 700;
 }
 
 /* Form Section Styles */
 .document-selection, .form-display {
     margin: 1rem;
     padding: 2rem;
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: rgba(255, 255, 255, 0.9);
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     width: 100%;
@@ -58,6 +59,7 @@ label, select, input, textarea, button {
 
 label {
     font-weight: bold;
+    color: #1e3c72;
 }
 
 select, input, textarea {
@@ -65,6 +67,7 @@ select, input, textarea {
     border: 1px solid #ccc;
     border-radius: 4px;
     font-size: 1rem;
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
 }
 
 textarea {
@@ -73,17 +76,18 @@ textarea {
 
 button {
     padding: 0.75rem;
-    background-color: #4CAF50;
+    background-color: #2a5298;
     color: white;
     border: none;
     border-radius: 4px;
     cursor: pointer;
     font-size: 1rem;
     font-weight: bold;
+    transition: background-color 0.3s ease;
 }
 
 button:hover {
-    background-color: #388e3c;
+    background-color: #1e3c72;
 }
 
 #formContent {
