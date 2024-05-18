@@ -72,18 +72,28 @@ select {
     border-radius: 4px;
     font-size: 1rem;
     font-family: 'Inter', sans-serif;
-    transition: all 0.3s ease;
+    appearance: none;
+    background-color: #fff;
+    background-image: linear-gradient(45deg, transparent 50%, #2c5364 50%), 
+                      linear-gradient(135deg, #2c5364 50%, transparent 50%);
+    background-position: calc(100% - 20px) calc(1em + 2px), 
+                         calc(100% - 15px) calc(1em + 2px);
+    background-size: 5px 5px, 5px 5px;
+    background-repeat: no-repeat;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
 }
 
 select:hover {
     border-color: #2c5364;
     box-shadow: 0 0 5px rgba(44, 83, 100, 0.5);
+    background-color: #f1f1f1;
 }
 
 select:focus {
     border-color: #203a43;
     box-shadow: 0 0 10px rgba(32, 58, 67, 0.5);
     outline: none;
+    background-color: #e1e1e1;
 }
 
 textarea {
